@@ -1,0 +1,79 @@
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #b0836b;
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    nav {
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+            li {
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: black;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .auth-links {
+        display: flex;
+        gap: 15px;
+
+        .login-btn, .signup-btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: grey;
+            font-weight: bold;
+
+            &:hover {
+                background-color: blueviolet;
+                color: #fff;
+            }
+        }
+
+        .signup-btn {
+            background-color: black;
+        }
+    }
+}
+
+// Responsive Design for Navigation
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        nav ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .auth-links {
+            margin-top: 10px;
+        }
+    }
+}

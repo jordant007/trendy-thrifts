@@ -1,0 +1,29 @@
+@use "../../utilities/mixins" as *;
+@use "../../utilities/variables" as *;
+.contact-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-section a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section a:hover {
+    color: #555;
+}
