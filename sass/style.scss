@@ -1,6 +1,6 @@
 @use "./utilities/base";
-@use "./pages/about-us/about";
-@use "./pages/contacts/contact";
+
+// @use "./pages/contacts/contact";
 @use "./pages/home/nav";
 @use "./pages/shop/footer";
 @use "./pages/shop/shop-section";
@@ -9,3 +9,7 @@
 @use "./pages/home/header";
 @use "./utilities/mixins";
 @use "./utilities/variables";
+@use "../sass/pages/login/login";
+@use "./pages/sign-up/sign-up";
+@use ".././sass/pages/contacts/contact";
+@use "../sass/pages/about-us/about"

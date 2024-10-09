@@ -1,0 +1,83 @@
+@use "../../utilities/variables" as *;
+
+.form{
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: $primary-color;
+    }
+
+    .auth-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 1rem;
+                margin-bottom: 5px;
+                color: $text-color;
+            }
+
+            input {
+                padding: 10px;
+                border-radius: 4px;
+                border: 1px solid rgb(29, 12, 12);
+                font-size: 1rem;
+                color: $text-color;
+
+                &:focus {
+                    border-color: $primary-color;
+                }
+            }
+        }
+
+        button {
+            padding: 12px;
+            background-color: $primary-color;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        margin-top: 20px;
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover {
+                color: darken($primary-color, 10%);
+            }
+        }
+    }
+
+
+// Responsive Design
+@media (max-width: 768px) {
+    .auth-page {
+        padding: 20px;
+    }
+}
