@@ -365,7 +365,8 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 50px;
-  background-image: url("images/reduced.jpeg");
+  background-image: url("/images/reduced.jpeg");
+  background-image: url("https://github.com/jordant007/trendy-thrifts/blob/master/images/reduced.jpeg?raw=true");
   background-size: cover;
   background-position: center;
   height: 100vh;
