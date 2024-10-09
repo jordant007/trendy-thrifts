@@ -1,0 +1,9 @@
+@use "../../utilities/mixins" as *;
+@use "../../utilities/variables" as *;
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
